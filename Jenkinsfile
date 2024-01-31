@@ -7,6 +7,9 @@ pipeline {
     environment { 
         GREETING = 'Hi Hello'
     }
+     options {
+        timeout(time: 1, unit: 'SECONDS') 
+    }
     // build
     stages {
         stage('Build') {
