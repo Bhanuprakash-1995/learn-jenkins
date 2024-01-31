@@ -27,6 +27,7 @@ pipeline {
                 sh """
                     echo 'Executing from shell script!'
                     echo "${GREETING}"
+                    sleep 10
                 """
             }
         }
