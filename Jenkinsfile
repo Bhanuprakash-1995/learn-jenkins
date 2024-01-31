@@ -39,7 +39,7 @@ pipeline {
                 sh """
                     echo 'Executing from shell script!'
                     echo "${GREETING}"
-                    sleep 10
+                    #sleep 10
                 """
             }
         }
@@ -58,7 +58,6 @@ pipeline {
                """
             }
         }
-    }
     }
     // post build
     post { 
