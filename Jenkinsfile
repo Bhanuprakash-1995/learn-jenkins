@@ -22,7 +22,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 sh """
-                    echo 'Deploying....'
+                    echo 'Executing from shell script!'
                     echo "${GREETING}"
                 """
             }
