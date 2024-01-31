@@ -43,5 +43,8 @@ pipeline {
         success { 
             echo 'This runs when pipeline executed successfully!'
         }
+        aborted { 
+            echo 'This runs when pipeline Timeout has been exceeded!'
+        }
     }
 }
